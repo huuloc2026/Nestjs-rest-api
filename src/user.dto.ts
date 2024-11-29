@@ -1,4 +1,4 @@
-import { BaseDto } from "base.dto";
+import { BaseDto } from "src/base.dto";
 import { Expose } from "class-transformer";
 import { IsNotEmpty } from "class-validator";
 
