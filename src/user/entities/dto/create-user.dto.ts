@@ -3,14 +3,12 @@ import { IsNotEmpty, IsOptional } from "class-validator";
 
 export class CreateUserDto {
     @Expose()
-    @IsOptional()
-    username: string
+    @IsNotEmpty({message: "email not is empty"})
+    email: string
 
     @Expose()
-    @IsOptional()
+    @IsNotEmpty()
     password: string
      
-    @Expose()
-    @IsNotEmpty()
-    link: string
+
 }
